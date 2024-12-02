@@ -26,17 +26,16 @@ A simple Product Management application built using Python's Tkinter library and
 2. Set up PostgreSQL database:
 **Create a PostgreSQL database named yzv104_term_project.**
   - Create a table called products with the following schema:
-```sql
-Copy code
-CREATE TABLE products (
-    product_id SERIAL PRIMARY KEY,
-    barcode VARCHAR(50) NOT NULL,
-    name VARCHAR(100) NOT NULL,
-    stock INTEGER NOT NULL,
-    purchase_price DECIMAL(10, 2) NOT NULL,
-    sell_price DECIMAL(10, 2) NOT NULL
-);
-```
+   ```sql
+   CREATE TABLE products (
+       product_id SERIAL PRIMARY KEY,
+       barcode VARCHAR(50) NOT NULL,
+       name VARCHAR(100) NOT NULL,
+       stock INTEGER NOT NULL,
+       purchase_price DECIMAL(10, 2) NOT NULL,
+       sell_price DECIMAL(10, 2) NOT NULL
+   );
+   ```
 3. Configure the database connection in main.py
    ```python
     DB_HOST = 'localhost'
@@ -46,9 +45,8 @@ CREATE TABLE products (
    ```
 
 4. Run the application:
-
-```bash
-  python3 main.py
-```
+   ```bash
+     python3 main.py
+   ```
 
 
